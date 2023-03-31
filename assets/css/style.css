@@ -28,3 +28,29 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* HEADER */
+
+/* BANNER */
+.banner {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.banner__image {
+    height: auto;
+
+    background: url('../images/intro-banner.jpg') center no-repeat cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 0px 440px;
+}
+
+.banner__logo {
+    width: 180px;
+    fill: #577577;
+    font-size: 50px;
+
+    position: absolute;
+    right: 100px;
+    bottom: -80px;
+}
