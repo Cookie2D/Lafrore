@@ -5,6 +5,8 @@ body {
     font-size: 20px;
     color: #262A2C;
     line-height: 30px;
+
+    background-color: #F1EBE4;
 }
 
 *,
@@ -12,3 +14,13 @@ body {
 *:after {
     box-sizing: border-box;
 }
+
+/* CONTAINER */
+
+.container {
+    width: 100%;
+    max-width: 1312px;
+    margin: 0 auto;
+}
+
+/* HEADER */
