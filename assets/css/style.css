@@ -80,12 +80,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .nav-icons {
-    padding-top: 6px;
+    display: flex;
+    align-items: center;
 }
 
-.cart-counter {
+.nav-counter {
     font-family: 'Quicksand';
     color: #262A2C;
+    margin-left: 3px;
 }
 
 .nav-link:hover,
