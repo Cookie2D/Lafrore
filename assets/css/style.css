@@ -246,6 +246,7 @@ h1,h2,h3,h4,h5,h6 {
 .bag__button.red { background: #821719 }
 
 .promo__description {
+    margin-top: 80px;
     padding: 0 24px;
     border-left: 1px solid #577577;
     border-right: 1px solid #577577;
