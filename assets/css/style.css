@@ -30,7 +30,7 @@ h1,h2,h3,h4,h5,h6 {
 /* HEADER */
 
 .header {
-    font-family: 'Baskerville', serif;
+    font-family: 'Baskervville', serif;
     font-weight: 400;
     padding: 20px 0;
 }
@@ -151,9 +151,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .about__title {
-    font-family: 'Baskerville', serif;
-    font-size: 32px;
+    font-family: 'Baskervville';
+    font-style: normal;
     font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
 }
 .about__text {
     margin-top: 40px;
