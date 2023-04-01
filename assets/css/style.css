@@ -161,3 +161,105 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 40px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+/* PROMO */
+
+.promo {
+    margin-top: 140px;
+    text-align: center;
+}
+
+.promo__image {
+    position: relative;
+}
+
+.promo__title, .promo__brand {
+    margin-top: 20px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    text-transform: capitalize;
+}
+
+.promo__brand {
+    margin-top: 0;
+    line-height: 40px;
+    color: #577577;
+}
+
+.promo__subbrand {
+    font-weight: 300;
+    margin-top: 0;
+    text-transform: capitalize;
+}
+
+.promo__title:after {
+    text-align: center;
+    margin: 140px auto 40px;
+    content: "";
+    display: block;
+    width: 422px;
+    border: 1px solid #577577;
+}
+
+.promo__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details__text {
+    text-align: center;
+}
+
+.promo__bag {
+    margin-top: 140px;
+}
+
+.bag__price {
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 30px;
+    margin: 0;
+    color: #000000;
+}
+
+.bag__button {
+    width: 27px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 0 10px 10px;
+    border: none;
+    cursor: pointer;
+    
+    transition: .2s linear transform;
+}
+
+.bag__button:hover {
+    transform: translateY(-4px);
+}
+
+.bag__button.black { background: #181512 }
+.bag__button.gray { background: #5E5C61 }
+.bag__button.cyan { background: #577577 }
+.bag__button.red { background: #821719 }
+
+.promo__description {
+    padding: 0 24px;
+    border-left: 1px solid #577577;
+    border-right: 1px solid #577577;
+    height: 185px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo:after {
+    content: "";
+    display: block;
+    width: 310px;
+    height: 1px;
+    margin: 32px auto 200px;
+    background-color: #577577;
+}
