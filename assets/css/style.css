@@ -1,6 +1,6 @@
 body {
     margin: 0;
-
+    
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     color: #262A2C;
@@ -17,6 +17,15 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
     margin: 0;
+}
+
+.logo {
+    font-family: 'Baskervville', serif;
+    color: #213333;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 48px;
 }
 
 /* CONTAINER */
@@ -39,14 +48,6 @@ h1,h2,h3,h4,h5,h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.header__logo {
-    color: #213333;
-    font-size: 32px;
-    font-weight: 400;
-    letter-spacing: 0.1em;
-    line-height: 48px;
 }
 
 .header__line {
@@ -259,7 +260,7 @@ h1,h2,h3,h4,h5,h6 {
 .promo__description:after {
     content: "";
     display: block;
-    width: 310px;
+    max-width: 310px;
     height: 1px;
     margin: 32px auto 140px;
     background-color: #577577;
@@ -278,6 +279,15 @@ h1,h2,h3,h4,h5,h6 {
 .review {
     margin-top: 52px;
     margin-bottom: 100px;
+}
+
+.review:after {
+    content: "";
+    display: block;
+    max-width: 866px;
+    height: 1px;
+    margin: 140px auto;
+    background-color: #577577;
 }
 
 .review__title {
@@ -333,6 +343,154 @@ h1,h2,h3,h4,h5,h6 {
 
 .rate__reviewer p {
     margin: 0;
+}
+
+.order {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.moimoi {
+    text-align: center;
+}
+
+/* FOOTER */
+
+.footer {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 60px;
+    border: 2px solid #577577;
+}
+
+.footer__socials {
+    display: flex;
+    flex-direction: column;
+}
+
+.socials__link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+
+    font-family: 'Quicksand';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #35494A;
+}
+
+.socials__link img {
+    margin-right: 9px;
+}
+
+.footer__form {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 300px;
+}
+
+.form__input {
+    display: block;
+    background-color: #F1EBE4;
+    border: none;
+    border-bottom: 2px solid #5E5E5E;
+
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* The container */
+.form__checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #3D3D3D;
+}
+
+/* Hide the browser's default checkbox */
+.form__checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #F1EBE4;
+    border: 2px solid #35494A;
+}
+
+/* On mouse-over, add a grey background color */
+.form__checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.form__checkbox input:checked ~ .checkmark {
+    background-color: #35494A;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.form__checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.form__checkbox .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #F1EBE4;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.footer__submit {
+    font-family: 'Baskervville';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: auto;
+
+    text-decoration-line: underline;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    color: #35494A;
 }
 
 /* BUTTON */
