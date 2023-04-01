@@ -29,6 +29,70 @@ h1,h2,h3,h4,h5,h6 {
 
 /* HEADER */
 
+.header {
+    font-family: 'Baskerville', serif;
+    font-weight: 400;
+    padding: 20px 0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    color: #213333;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 48px;
+}
+
+.header__line {
+    flex-grow: 1;
+    border-bottom: 1px solid #5E5E5E;
+    margin: 0 5%;
+}
+
+/* NAV */
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link,
+.nav-icons {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 25px;
+    max-height: 32px;
+
+    transition: .2s linear transform;
+}
+
+.nav-link {
+    font-size: 28px;
+    line-height: 32px;
+    color: #262A2C;
+
+}
+
+.nav-icons {
+    padding-top: 6px;
+}
+
+.cart-counter {
+    font-family: 'Quicksand';
+    color: #262A2C;
+}
+
+.nav-link:hover,
+.nav-icons:hover {
+    transform: translateY(-4px);
+}
+
 /* BANNER */
 .banner {
     max-width: 1440px;
