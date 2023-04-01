@@ -245,7 +245,7 @@ h1,h2,h3,h4,h5,h6 {
 .bag__button.cyan { background: #577577 }
 .bag__button.red { background: #821719 }
 
-.promo__description {
+.promo__description-text {
     margin-top: 80px;
     padding: 0 24px;
     border-left: 1px solid #577577;
@@ -256,11 +256,32 @@ h1,h2,h3,h4,h5,h6 {
     align-items: center;
 }
 
-.promo:after {
+.promo__description:after {
     content: "";
     display: block;
     width: 310px;
     height: 1px;
-    margin: 32px auto 200px;
+    margin: 32px auto 140px;
     background-color: #577577;
+}
+
+.promo__collage {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.order__button {
+    padding: 6px 118px;
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #F1EBE4;
+
+    background: #577577;
+    border: 2px solid #35494A;
+    cursor: pointer;
 }
