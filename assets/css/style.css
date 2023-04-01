@@ -273,6 +273,8 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 40px;
 }
 
+/* BUTTON */
+
 .order__button {
     padding: 6px 118px;
     font-family: 'Quicksand';
@@ -284,4 +286,11 @@ h1,h2,h3,h4,h5,h6 {
     background: #577577;
     border: 2px solid #35494A;
     cursor: pointer;
+
+    transition: .2s linear;
+}
+
+.order__button:hover {
+    color: #35494A;
+    background-color: #F1EBE4;
 }
