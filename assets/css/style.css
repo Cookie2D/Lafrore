@@ -273,6 +273,68 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 40px;
 }
 
+/* REVIEW */
+
+.review {
+    margin-top: 52px;
+    margin-bottom: 100px;
+}
+
+.review__title {
+    font-family: 'Baskervville';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+
+    color: #213333;
+}
+
+.review__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review__rate {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px;
+    max-width: 310px;
+    text-align: center;
+
+    border: 2px solid #577577;
+    border-radius: 3px;
+}
+
+.rate__title {
+    margin-top: 20px;
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.rate__text {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.rate__reviewer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.rate__reviewer p {
+    margin: 0;
+}
+
 /* BUTTON */
 
 .order__button {
