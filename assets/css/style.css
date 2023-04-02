@@ -9,6 +9,10 @@ body {
     background-color: #F1EBE4;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 *,
 *:before,
 *:after {
