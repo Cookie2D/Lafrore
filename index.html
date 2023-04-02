@@ -137,7 +137,7 @@
                     <img src="assets/images/promo/colored/bag_cyan.png" alt="cyan bag">
                     <img src="assets/images/promo/colored/bag_red.png" alt="red bag">
                 </div>
-                <button class="order__button">Make an order</button>
+                <button class="order__button" onclick="openModal()">Make an order</button>
             </div>
         </div>
     </div>
@@ -226,7 +226,7 @@
 
     <div class="order">
         <div class="container">
-            <button class="order__button">Make an order</button>
+            <button class="order__button" onclick="openModal()">Make an order</button>
         </div>
     </div>
 
@@ -260,5 +260,40 @@
             </div>
         </div>
     </footer>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal__inner">
+        <h1 class="modal__title">Make an order</h1>
+        <div class="modal__form">
+            <label for="modal-name" class="modal__label">Full Name*</label>
+            <input type="text" id="modal-name" class="modal__input">
+            
+            <label for="modal-country" class="modal__label">Country*</label>
+            <input type="text" id="modal-country" class="modal__input">
+            
+            <label for="modal-town" class="modal__label">Town/City*</label>
+            <input type="text" id="modal-town" class="modal__input">
+            
+            <label for="modal-email" class="modal__label">Email*</label>
+            <input type="email" id="modal-email" class="modal__input">
+
+            <p class="modal__label">Case color*</p>
+            <div class="modal__buttons bag__buttons">
+                <button class="bag__button black"></button>
+                <button class="bag__button gray"></button>
+                <button class="bag__button cyan"></button>
+                <button class="bag__button red"></button>
+            </div>
+
+            <button class="order__button" id="modal-close" style="width: 100%;" type="button">Submit</button>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="assets/scripts/modal.js"></script>
 </body>
 </html>

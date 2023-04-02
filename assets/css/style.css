@@ -231,10 +231,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .bag__button {
-    width: 27px;
-    height: 25px;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
-    margin: 0 10px 10px;
+    margin: 0 8px 10px 0;
     border: none;
     cursor: pointer;
     
@@ -495,6 +495,82 @@ h1,h2,h3,h4,h5,h6 {
     cursor: pointer;
 
     color: #35494A;
+}
+
+/* MODAL */
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 100; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background: rgba(217, 217, 217, 0.5);
+  }
+  
+  .modal__inner {
+    background-color: #fefefe;
+    margin: 50px auto; 
+    padding-top: 5px;
+    border: 1px solid #888;
+    max-width: 500px;
+    background: #F1EBE4;
+    border: 2px solid #577577;
+
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+
+  /* MODAL ANIMATION */
+    @-webkit-keyframes animatetop {
+        from {margin-top:-300px; opacity:0} 
+        to {margin-top:50px; opacity:1}
+    }
+    
+    @keyframes animatetop {
+        from {margin-top:-300px; opacity:0} 
+        to {margin-top:50px; opacity:1}
+    }
+
+  .modal__form {
+    padding: 42px;
+  }
+
+  .modal__title {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    border-bottom: 2px solid #577577;
+    color: #35494A;
+  }
+
+  .modal__input {
+    display: block;
+    width: 100%;
+    background: #F1EBE4;
+    border: 1px solid #5E5E5E;
+    height: 48px;
+    margin-bottom: 20px;
+}
+
+.modal__label {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    color: #5E5E5E;
+}
+
+.modal__buttons {
+    margin-bottom: 30px;
 }
 
 /* BUTTON */
