@@ -22,6 +22,11 @@ html {
 h1,h2,h3,h4,h5,h6 {
     margin: 0;
 }
+img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+   }
 
 .logo {
     font-family: 'Baskervville', serif;
@@ -36,13 +41,15 @@ h1,h2,h3,h4,h5,h6 {
 
 .container {
     width: 100%;
-    max-width: 1312px;
+    max-width: 1342px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
 /* HEADER */
 
 .header {
+    margin: 0 auto;
     font-family: 'Baskervville', serif;
     font-weight: 400;
     padding: 20px 0;
@@ -111,6 +118,7 @@ h1,h2,h3,h4,h5,h6 {
 .banner__image {
     height: auto;
 
+    max-width: 100%;
     background: url('../images/intro-banner.jpg') center no-repeat cover;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 0px 440px;
@@ -272,10 +280,16 @@ h1,h2,h3,h4,h5,h6 {
 
 .promo__collage {
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
     margin-top: 80px;
     margin-bottom: 40px;
+}
+
+.promo__collage img{
+    margin: 15px 15px;
+    max-width: 290px;
 }
 
 /* REVIEW */
@@ -305,7 +319,9 @@ h1,h2,h3,h4,h5,h6 {
 
 .review__inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+
+    flex-wrap: wrap;
 }
 
 .review__rate {
@@ -313,6 +329,7 @@ h1,h2,h3,h4,h5,h6 {
     flex-direction: column;
     
     padding: 20px;
+    margin: 5px;
     max-width: 310px;
     text-align: center;
 
@@ -355,6 +372,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .moimoi {
+    height: auto;
     text-align: center;
 }
 
@@ -593,4 +611,164 @@ h1,h2,h3,h4,h5,h6 {
 .order__button:hover {
     color: #35494A;
     background-color: #F1EBE4;
+}
+
+@media (max-width: 1100px) {
+    .promo__image {
+        max-width: 80%;
+    }
+
+    .promo__details {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1000px) {
+    .about__inner {
+        flex-direction: column;
+
+        margin-top: 50px;
+    }
+
+    .about__inner img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .about__title {
+        text-align: center;
+    }
+
+    .about__about {
+        margin-left: 0;
+    }
+
+    .about__work {
+        margin-right: 0;
+    }
+
+    .about__about:after, .about__work:after {
+        content: none;
+    }
+
+    .promo__bag img {
+        max-width: 80%;
+    }
+
+    .moimoi {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 850px) {
+    body {
+        font-size: 16px;
+    }
+    .nav-link {
+        font-size: 20px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer {
+        text-align: center;
+
+    }
+    .footer__inner {
+        flex-direction: column;
+
+    }
+    .footer__socials {
+        flex-direction: row;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .socials__link {
+        margin: 15px;
+    }
+
+    .header__line {
+        display: none;
+    }
+
+    .header__inner {
+        justify-content: space-around;
+    }
+
+    .banner {
+        width: 80%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .review__title {
+        text-align: center;
+    }
+
+    .banner__logo {
+        right: 0px;
+        bottom: -50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer__socials {
+        flex-direction: column;
+    }
+
+    .order__button {
+        font-size: 16px;
+        padding: 6px 50px;
+    }
+
+    .nav-link, .nav-icons {
+        margin: 0 10px;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+    .nav-icons {
+        width: 16px;
+    }
+
+    .promo__title:after {
+        content: none;
+    }
+}
+
+@media (max-width: 500px) {
+    body, .bag__price {
+        font-size: 14px;
+    }
+    
+    .promo__description:after {
+        content: none;
+    }
+
+    .promo__description-text {
+        height: 100%;
+        
+    }
+
+    .about__text {
+        margin-top: 10px;
+    }
+
+    .promo__brand {
+        margin-top: 40px;
+    }
+    
+    .promo__collage {
+        margin-top: 10px;
+    }
 }
