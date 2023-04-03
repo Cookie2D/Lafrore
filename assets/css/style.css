@@ -671,6 +671,14 @@ img {
     .logo {
         font-size: 22px;
     }
+
+    .promo, .promo__bag {
+        margin-top: 15px;
+    }
+
+    .review:after {
+        content: none;
+    }
 }
 
 @media (max-width: 700px) {
